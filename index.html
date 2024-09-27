@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ERSTE SCHRITTE MIT BRACKETS</title>
+        <meta name="description" content="Ein interaktiver Wegweiser für die ersten Schritte mit Brackets.">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body style="background-color:azure">
+        <h1 style="color:deepskyblue">INTERAKTIVE SCHULRALLY</h1>
+        
+        <div id="Einleitung">
+        <p>Herzlich Wilkommen zu unsere tolle Schulrally.UM an diese Rally tielzunehmen,ist es am besten zwischen 3-10 Leute zu sein.In deiser Rally werdet ihr Orte und Geräusche finden müssen,sportlische Aufgaben bekommen und noch viele andere Sachen.Dafür braucht ihr einen Digitales Gerrät und/oder Stifte und Papier.Das Ziel dieser Rally ist es Hinweise zu finden und Rätsel zu lösen.Seid ihr bereit? Na dann, viel Spaß!!</p>
+        
+        </div>
+        <div id="start">  
+        <button style="background-color:lightgreen; width:100px;height:75px" onclick="start()">Start</button>
+        </div>
+        
+        <div id="Aufgabe1" style=" display:none; width: 300px; background-color: aqua; border: 2px solid black;">
+    <p>Aufgabe 1: Wie viele grüne und gelbe Steine sind auf der längeren Kletterwand zu sehen?(das Foto bringt nichts, denn da ist nicht die ganze Wand zu sehen)</p>
+      <img src="Kletterwand" width=164px>
+            <br>
+            <label>
+         <input type="text" id="Antwort1" style="width:40px;height:30px">
+            </label>
+            <button  onclick="Aufgabe1()">Weiter</button>
+    </div>
+        
+        <div id="Hinweis1" style="display:none">
+        <p> Schade!Versuche es nochmal</p>
+        </div>
+        
+        <div id="Aufgabe2" style="display:none; width: 300px; background-color:plum; border: 2px solid black; ">
+        <p>Sehr gut!Richtig!</p>
+        <p>Aufgabe 2: Versuche in der oberen Turnhalle einen 3 Sekunden Handstand zuhalten.Du kannst dich mit der Wand helfen.</p>
+        <img src="Handstand.jpeg" width=164px>
+        <p>geschaft:</p>
+        <button style="background-color:green; width:75px;height:50px" onclick="Aufgabe2()">ja</button> <button style="background-color:red;width:75px;height:50px" width=75px onclick="hinweis2()">nein</button>
+        </div>
+        
+         <div id="Hinweis2" style="display:none">
+        <p> Schade!Versuche es nochmal</p>
+        </div>
+        
+        <div id="Aufgabe3" style= "display: none;width: 300px; background-color:yellow; border: 2px solid black;">
+            <p>Sehr gut!Richtig!</p>
+        <p> Aufgabe 3: Was bedeutet das N in "N1-04"?</p>
+            
+             <img src="Eule.jpeg" width=164px> 
+            <br>
+             <input type="text" id="Antwort3" style="width:40px;height:30px">
+               <button onclick="Aufgabe3()">weiter</button>
+            
+        </div>
+        
+        <div id="Hinweis3"style="display:none">
+        <p> Schade!Versuche es nochmal!</p>
+        </div>
+        
+        
+        <div id="Aufgabe4" style= "display: none;width: 300px; background-color:lightgreen;border: 2px solid black;">
+             <p>Sehr gut!Richtig!</p>
+        <p>Aufgabe 4:Schätze wie lange du brauchst um die Rutsche runterzurutschen.
+            Versuche es in 5 Sekunden.</p>
+            <img src="Rutsche.jpeg" width=164px>
+            <p>geschaft:</p>
+            <button style="background-color: green;width:75px;height:50px" onclick="Aufgabe4()";>ja</button> <button style="background-color:red;width:75px;height:50px;" onclick="hinweis4()">nein</button>
+        </div>
+        
+         <div id="Hinweis4"style="display:none">
+        <p> Schade!Versuche es nochmal!</p>
+        </div>
+        
+        
+        <div id="Aufgabe5" style= "display: none;width: 300px;background-color:crimson;border: 2px solid black;">
+               <p>Sehr gut!Richtig!</p>
+            <p>Aufgabe5:Versuche an den Seil langzuhangeln um an der anderen Seite zu gelangen.Dur hast 3 Versuche.</p>
+            <img src="seil.jpeg" width=164px>
+            <p>geschaft:</p>
+            <button style="background-color:green;width:75px;height:50px" onclick="Aufgabe5()">ja</button> <button style="background-color:red;width:75px;height:50px"  onclick="hinweis5()">nein</button>
+            
+            </div>
+        
+         <div id="Hinweis5" style="display:none">
+        <p> Schade!Versuche es nochmal!</p>
+        </div>
+        
+        
+        <div id="Aufgabe6" style="display: none;width:300px;background-color: darkcyan;border:2px solid black;">
+             <p>Sehr gut!Richtig!</p>  
+        <p>Aufgabe 6:Oupsi! Irgendwas ist beim programmieren schiefgegangen!Könnt ihr uns helfen den Fehler zu korriegieren? Na dann, los gehts:
+            
+            a) Welche Ziffern sind auf dem Bild zu erkennen?</p>    
+        <img src="Level1einfachneu.png"width=164px>
+            <input type="text" id="Antwort6a">
+            <p>b) Welches Zeichen ist auf dem Bild zu erkennen?</p>
+        <img src="%20Level7.png" width=164px>
+            <input type="text"  id="Antwort6b">
+            <p>c) Welches Wort ist auf dem Bild zu sehen? </p>
+            <img src="Level10.png" width=164px>
+            <input type="text" id="Antwort6c" >
+            <button onclick="Aufgabe6()">Weiter</button>
+        </div>
+        
+    
+          
+         <div id="Hinweis6" style="display:none">
+        <p> Schade!Versuche es nochmal!</p>
+        </div>
+        
+        <div id="Ende" style="display:none">
+        <h1> Herzlichen Glückwunsch, du hast die Rally geschafft!!</h1></div>
+        <script>
+          function Einleitung()
+        {document.getElementById("start").style.display="block"} 
+        function start()
+        {document.getElementById("Aufgabe1").style.display="block"}   
+       
+        function Aufgabe1()
+        {
+            
+            if (document.getElementById("Antwort1").value.match("35")) {
+                document.getElementById("Aufgabe2").style.display="block";
+                document.getElementById("Hinweis1").style.display="none"
+            }
+            else{  document.getElementById("Hinweis1").style.display="block"
+                
+            }
+        }
+        
+        function Aufgabe2()
+        {
+            document.getElementById("Aufgabe3").style.display="block";
+            document.getElementById("Hinweis2").style.display="none"
+        }
+            
+        function hinweis2() {
+            document.getElementById("Hinweis2").style.display="block"
+        }
+            
+        function Aufgabe3()
+        {  
+            if (document.getElementById("Antwort3").value.match("Neubau")) {
+                document.getElementById("Aufgabe4").style.display="block"
+                document.getElementById("Hinweis3").style.display="none"
+            }
+            else {  document.getElementById("Hinweis3").style.display="block"
+                
+            }
+            
+        }  
+          function Aufgabe4()
+        {document.getElementById("Aufgabe5").style.display="block";
+          document.getElementById("Hinweis4").style.display="none"
+        }  
+            
+        function hinweis4(){
+              document.getElementById("Hinweis4").style.display="block"
+            
+        }
+            
+        function Aufgabe5()
+        {
+            document.getElementById("Aufgabe6").style.display="block"; 
+            document.getElementById("Hinweis5").style.display="none"
+        }  
+         
+        function hinweis5(){
+              document.getElementById("Hinweis5").style.display="block"
+        }
+                   
+        function Aufgabe6()
+        {  
+            if (document.getElementById("Antwort6a").value.match("64") && document.getElementById("Antwort6b").value.match("#") && document.getElementById("Antwort6c").value.match("Brecht")) {
+                document.getElementById("Ende").style.display="block";
+                document.getElementById("Hinweis6").style.display="none"
+            }
+            else {  document.getElementById("Hinweis6").style.display="block"
+                
+            }
+            
+        }  
+               
+         </script>
+        
+            
+        
+    </body>
+</html>
+        
